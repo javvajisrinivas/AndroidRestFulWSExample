@@ -23,7 +23,7 @@ public class EmployeeActivity extends Activity {
 //        setSupportActionBar(toolbar);
 
         GridView gridview = (GridView) findViewById(R.id.gridView);
-        gridview.setAdapter(new ImageAdapter(this,EMP_OPERATIONS ));
+        gridview.setAdapter(new OperationsAdapter(this,EMP_OPERATIONS ));
 
         gridview.setOnItemClickListener(new OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) {

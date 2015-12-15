@@ -13,11 +13,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-public class ImageAdapter extends BaseAdapter {
+public class OperationsAdapter extends BaseAdapter {
     private Context context;
     private final String[] opeationNames;
 
-    public ImageAdapter(Context context, String[] opeationNames) {
+    public OperationsAdapter(Context context, String[] opeationNames) {
         this.context = context;
         this.opeationNames = opeationNames;
     }

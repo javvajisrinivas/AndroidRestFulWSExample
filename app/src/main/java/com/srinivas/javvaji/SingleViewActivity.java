@@ -35,7 +35,8 @@ public class SingleViewActivity extends Activity {
 
             TextView party_name = (TextView) findViewById(R.id.party_name);
 
-            Button party_id = (Button) findViewById(R.id.party_id);
+            TextView party_id = (TextView) findViewById(R.id.party_id);
+
 
 
 
