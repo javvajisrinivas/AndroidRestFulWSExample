@@ -23,8 +23,9 @@ public class Utility {
 	 * @return true for Valid Email and false for Invalid Email
 	 */
 	public static boolean validate(String mobileNo) {
-		if(mobileNo.length() > 10)
-			mobileNo = mobileNo.substring(mobileNo.length()-10);
+//		if(mobileNo.length() > 10)
+//			mobileNo = mobileNo.substring(mobileNo.length()-10);
+
 		pattern = Pattern.compile(MOBILE_PATTERN);
 		matcher = pattern.matcher(mobileNo);
 		return matcher.matches();

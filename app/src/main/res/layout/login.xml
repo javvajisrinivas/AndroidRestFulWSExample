@@ -5,7 +5,7 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
         android:orientation="vertical"
         android:padding="10dip" >
 
@@ -13,16 +13,20 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dip"
-            android:text="@string/login_title"
+            android:text="@string/customer_login"
+
             android:textSize="25sp"
+            android:background="#0099cc"
             android:textStyle="bold" />
 
+
         <EditText
-            android:id="@+id/loginEmail"
+            android:id="@+id/mobileNumber"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter your Email ID"
-            android:inputType="textEmailAddress" />
+            android:hint="@string/prompt_number"
+            android:inputType="phone"
+            android:maxLength="10"/>
 
         <TextView
             android:layout_width="fill_parent"
@@ -34,7 +38,7 @@
             android:id="@+id/loginPassword"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter Password"
+            android:hint="@string/prompt_password"
             android:inputType="textPassword" />
 
         <TextView
@@ -52,8 +56,9 @@
             android:layout_marginTop="20dip"
             android:background="@color/abc_search_url_text_normal"
             android:onClick="loginUser"
-            android:text="Login"
+            android:text="@string/action_sign_in"
             android:textColor="#fff" />
+
 
     </LinearLayout>
 

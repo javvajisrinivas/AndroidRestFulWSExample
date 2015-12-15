@@ -30,7 +30,7 @@ public class LoginActivity extends Activity {
 	ProgressDialog prgDialog;
 	// Error Msg TextView Object
 	TextView errorMsg;
-	// Email Edit View Object
+	// Mobile Number Edit View Object
 	EditText mobileNoET;
 	// Passwprd Edit View Object
 	EditText pwdET;
@@ -40,8 +40,8 @@ public class LoginActivity extends Activity {
 		setContentView(R.layout.login);
 		// Find Error Msg Text View control by ID
 		errorMsg = (TextView)findViewById(R.id.login_error);
-		// Find Email Edit View control by ID
-		mobileNoET = (EditText)findViewById(R.id.loginEmail);
+		// Find Mobile Number Edit View control by ID
+		mobileNoET = (EditText)findViewById(R.id.mobileNumber);
 		// Find Password Edit View control by ID
 		pwdET = (EditText)findViewById(R.id.loginPassword);
 		// Instantiate Progress Dialog object
@@ -71,7 +71,7 @@ public class LoginActivity extends Activity {
 	 * @param view
 	 */
 	public void loginUser(View view){
-		// Get Email Edit View Value
+		// Get mobileNumber Edit View Value
 		String mobileNo = mobileNoET.getText().toString();
 		// Get Password Edit View Value
 		String password = pwdET.getText().toString();
@@ -81,11 +81,11 @@ public class LoginActivity extends Activity {
 
 		// Instantiate Http Request Param Object
 		RequestParams params = new RequestParams();
-		// When Email Edit View and Password Edit View have values other than Null
+		// When Mobile Number Edit View and Password Edit View have values other than Null
 		if(Utility.isNotNull(mobileNo) && Utility.isNotNull(password)){
-			// When Email entered is Valid
+			// When Mobile Number entered is Valid
 			if(Utility.validate(mobileNo)){
-				// Put Http parameter username with value of Email Edit View control
+				// Put Http parameter username with value of Mobile Number Edit View control
 				params.put("username", mobileNo);
 				// Put Http parameter password with value of Password Edit Value control
 				params.put("password", password);
@@ -94,9 +94,9 @@ public class LoginActivity extends Activity {
 				// Invoke RESTful Web Service with Http parameters
 				invokeWS(params);
 			} 
-			// When Email is invalid
+			// When Mobile Number is invalid
 			else{
-				Toast.makeText(getApplicationContext(), "Please enter valid email", Toast.LENGTH_LONG).show();
+				Toast.makeText(getApplicationContext(), "Please enter valid Mobile Number", Toast.LENGTH_LONG).show();
 			}
 		} 
 		// When any of the Edit View control left blank
@@ -116,7 +116,7 @@ public class LoginActivity extends Activity {
 		 prgDialog.show();
 		 // Make RESTful webservice call using AsyncHttpClient object
 		 AsyncHttpClient client = new AsyncHttpClient();
-         client.get("http://1.0.0.12:8080/useraccount/login/dologin", params, new AsyncHttpResponseHandler() {
+         client.get("http://192.168.2.10:8080/useraccount/login/dologin", params, new AsyncHttpResponseHandler() {
 			 // When the response returned by REST has Http response code '200'
 			 @Override
 			 public void onSuccess(String response) {
@@ -181,7 +181,7 @@ public class LoginActivity extends Activity {
 	 * Method which navigates from Login Activity to Home Activity
 	 */
 	public void navigatetoHomeActivity(){
-		Intent homeIntent = new Intent(getApplicationContext(),HomeActivity.class);
+		Intent homeIntent = new Intent(getApplicationContext(),EmployeeActivity.class);
 		homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		startActivity(homeIntent);
 	}
