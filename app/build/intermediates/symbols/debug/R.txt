@@ -246,14 +246,11 @@ int id action_context_bar 0x7f0b001d
 int id action_menu_divider 0x7f0b0001
 int id action_menu_presenter 0x7f0b0002
 int id action_mode_close_button 0x7f0b0024
-int id action_settings 0x7f0b0048
+int id action_settings 0x7f0b0041
 int id activity_chooser_view_content 0x7f0b0025
 int id always 0x7f0b0013
 int id beginning 0x7f0b000f
-int id btnLinkToLoginScreen 0x7f0b0047
-int id btnLinkToRegisterScreen 0x7f0b0041
 int id btnLogin 0x7f0b0040
-int id btnRegister 0x7f0b0046
 int id checkbox 0x7f0b002d
 int id collapseActionView 0x7f0b0014
 int id container 0x7f0b003c
@@ -282,10 +279,6 @@ int id normal 0x7f0b0007
 int id progress_circular 0x7f0b0004
 int id progress_horizontal 0x7f0b0005
 int id radio 0x7f0b002f
-int id registerEmail 0x7f0b0043
-int id registerName 0x7f0b0042
-int id registerPassword 0x7f0b0044
-int id register_error 0x7f0b0045
 int id search_badge 0x7f0b0032
 int id search_bar 0x7f0b0031
 int id search_button 0x7f0b0033
@@ -335,8 +328,7 @@ int layout abc_search_view 0x7f030016
 int layout abc_simple_decor 0x7f030017
 int layout home 0x7f030018
 int layout login 0x7f030019
-int layout register 0x7f03001a
-int layout support_simple_spinner_dropdown_item 0x7f03001b
+int layout support_simple_spinner_dropdown_item 0x7f03001a
 int menu home 0x7f0c0000
 int menu login 0x7f0c0001
 int menu main 0x7f0c0002

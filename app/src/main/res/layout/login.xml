@@ -50,21 +50,11 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dip"
-            android:background="#ff6347"
+            android:background="@color/abc_search_url_text_normal"
             android:onClick="loginUser"
             android:text="Login"
             android:textColor="#fff" />
 
-        <Button
-            android:id="@+id/btnLinkToRegisterScreen"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dip"
-            android:background="@null"
-            android:onClick="navigatetoRegisterActivity"
-            android:text="Signup"
-            android:textColor="#228b22"
-            android:textStyle="bold" />
     </LinearLayout>
 
 </ScrollView>
