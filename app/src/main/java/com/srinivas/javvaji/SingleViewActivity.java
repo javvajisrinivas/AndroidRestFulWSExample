@@ -1,19 +1,29 @@
 package com.srinivas.javvaji;
 
 import android.app.Activity;
+import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class SingleViewActivity extends Activity {
+import java.util.ArrayList;
+import java.util.List;
+
+import loginAction.DueDetails;
+import loginAction.GenerateObjectsList;
+
+public class SingleViewActivity extends ListActivity  {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
 
         Intent intent = getIntent();
 
@@ -23,32 +33,27 @@ public class SingleViewActivity extends Activity {
         System.out.println("id --> "+ id );
         System.out.println("operationSelected --> "+ operationSelected );
 
-//        setListAdapter(new ListAct(this, Android));
-
-
         if(operationSelected.equals("DueList"))
         {
-            setContentView(R.layout.due_details_view);
+            ListView listView = getListView();
+            List<DueDetails> dueDetailsList = GenerateObjectsList.getDueDetailsList();
 
-
-            ImageView genderIcon = (ImageView) findViewById(R.id.genderIcon);
-
-            TextView party_name = (TextView) findViewById(R.id.party_name);
-
-            TextView party_id = (TextView) findViewById(R.id.party_id);
-
-
-
-
-
-        }else if(operationSelected.equals("Daily Transaction"))
-        {
-            setContentView(R.layout.transaction_details_view);
-
+            DueListAdapter adapter = new DueListAdapter(this, dueDetailsList);
+            setListAdapter(adapter);
         }
+//        else if(operationSelected.equals("Daily Transaction"))
+//        {
+//            setContentView(R.layout.transaction_details_view);
+//
+//        }
 
     }
+    @Override
+    protected void onListItemClick(ListView l, View v, int position, long id) {
+        DueDetails item = (DueDetails) getListAdapter().getItem(position);
 
+        Toast.makeText(this, item.getParty_name() + " selected", Toast.LENGTH_SHORT).show();
+    }
 
 
 

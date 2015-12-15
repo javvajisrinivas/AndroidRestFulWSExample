@@ -348,9 +348,10 @@ int layout activity_single_view 0x7f030019
 int layout due_details_view 0x7f03001a
 int layout emp_home 0x7f03001b
 int layout home 0x7f03001c
-int layout login 0x7f03001d
-int layout support_simple_spinner_dropdown_item 0x7f03001e
-int layout transaction_details_view 0x7f03001f
+int layout list_layout 0x7f03001d
+int layout login 0x7f03001e
+int layout support_simple_spinner_dropdown_item 0x7f03001f
+int layout transaction_details_view 0x7f030020
 int menu home 0x7f0c0000
 int menu login 0x7f0c0001
 int menu main 0x7f0c0002
