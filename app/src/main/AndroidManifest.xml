@@ -30,6 +30,13 @@
             android:name="com.srinivas.javvaji.HomeActivity"
             android:label="@string/title_activity_home" >
         </activity>
+
+        <activity
+        android:name=".EmployeeActivity"
+        android:label="@string/title_activity_employee">
+    </activity>
+        <activity android:name=".SingleViewActivity" />
+
     </application>
 
 </manifest>
