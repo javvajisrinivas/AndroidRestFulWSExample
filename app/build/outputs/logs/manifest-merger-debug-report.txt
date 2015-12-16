@@ -79,3 +79,9 @@ ADDED from D:\AdroidWorkSpace\AndroidRestFulWSExample\app\src\main\AndroidManife
 		ADDED from D:\AdroidWorkSpace\AndroidRestFulWSExample\app\src\main\AndroidManifest.xml:40:13-45
 	android:name
 		ADDED from D:\AdroidWorkSpace\AndroidRestFulWSExample\app\src\main\AndroidManifest.xml:39:19-73
+activity#com.srinivas.javvaji.IndividualDetailsView
+ADDED from D:\AdroidWorkSpace\AndroidRestFulWSExample\app\src\main\AndroidManifest.xml:44:1-115
+	android:label
+		ADDED from D:\AdroidWorkSpace\AndroidRestFulWSExample\app\src\main\AndroidManifest.xml:44:69-103
+	android:name
+		ADDED from D:\AdroidWorkSpace\AndroidRestFulWSExample\app\src\main\AndroidManifest.xml:44:11-68

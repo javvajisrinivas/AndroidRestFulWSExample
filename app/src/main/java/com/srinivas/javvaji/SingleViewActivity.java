@@ -13,6 +13,10 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
+
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -43,16 +47,33 @@ public class SingleViewActivity extends ListActivity  {
         }
 //        else if(operationSelected.equals("Daily Transaction"))
 //        {
-//            setContentView(R.layout.transaction_details_view);
+//            ListView listView = getListView();
+//
+//
+//
+//
+//            //setContentView(R.layout.transaction_details_view);
 //
 //        }
 
     }
+
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
         DueDetails item = (DueDetails) getListAdapter().getItem(position);
 
-        Toast.makeText(this, item.getParty_name() + " selected", Toast.LENGTH_SHORT).show();
+
+        Intent individualDetails = new Intent(getApplicationContext(), IndividualDetailsView.class);
+
+
+        Gson gson = new Gson();
+//        jsonObject.wrap(item);
+        individualDetails.putExtra("DueDetailsObj", gson.toJson(item));
+//        intent.putExtra("MyClass", obj);
+
+        startActivity(individualDetails);
+
+        Toast.makeText(this, item.getCompany_name() +"<-->" +item.getParty_name() + " selected", Toast.LENGTH_SHORT).show();
     }
 
 

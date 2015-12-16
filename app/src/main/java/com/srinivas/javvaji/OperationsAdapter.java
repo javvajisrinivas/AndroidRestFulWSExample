@@ -48,9 +48,9 @@ public class OperationsAdapter extends BaseAdapter {
             String operation = opeationNames[position];
 
             if (operation.equals("DueList")) {
-                imageView.setImageResource(R.drawable.users_list_16);
+                imageView.setImageResource(R.drawable.due_list_128);
             } else if (operation.equals("Daily Transaction")) {
-                imageView.setImageResource(R.drawable.daily_transactions);
+                imageView.setImageResource(R.drawable.transaction_details_128);
             }
 
         } else {

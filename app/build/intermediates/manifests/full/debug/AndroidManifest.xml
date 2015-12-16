@@ -38,6 +38,9 @@
             android:name="com.srinivas.javvaji.SingleViewActivity"
             android:label="@string/due_list" >
         </activity>
+        <activity
+            android:name="com.srinivas.javvaji.IndividualDetailsView"
+            android:label="Daliy Transactions" />
     </application>
 
 </manifest>

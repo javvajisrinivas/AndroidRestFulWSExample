@@ -814,12 +814,16 @@ containing a value of this type.
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
         public static final int daily_transactions=0x7f020057;
-        public static final int ic_launcher=0x7f020058;
-        public static final int party_details=0x7f020059;
-        public static final int party_details_64=0x7f02005a;
-        public static final int party_details_two=0x7f02005b;
-        public static final int transaction_detaills_icon=0x7f02005c;
-        public static final int users_list_16=0x7f02005d;
+        public static final int due_list_128=0x7f020058;
+        public static final int due_list_64=0x7f020059;
+        public static final int ic_launcher=0x7f02005a;
+        public static final int party_details=0x7f02005b;
+        public static final int party_details_64=0x7f02005c;
+        public static final int party_details_two=0x7f02005d;
+        public static final int transaction_detaills_icon=0x7f02005e;
+        public static final int transaction_details_128=0x7f02005f;
+        public static final int transaction_details_64=0x7f020060;
+        public static final int users_list_16=0x7f020061;
     }
     public static final class id {
         public static final int action_bar=0x7f0b001c;
@@ -833,15 +837,15 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f0b0001;
         public static final int action_menu_presenter=0x7f0b0002;
         public static final int action_mode_close_button=0x7f0b0024;
-        public static final int action_settings=0x7f0b004c;
+        public static final int action_settings=0x7f0b004e;
         public static final int activity_chooser_view_content=0x7f0b0025;
         public static final int always=0x7f0b0013;
-        public static final int appIcon=0x7f0b0049;
+        public static final int appIcon=0x7f0b004b;
         public static final int beginning=0x7f0b000f;
-        public static final int btnLogin=0x7f0b0048;
+        public static final int btnLogin=0x7f0b004a;
         public static final int checkbox=0x7f0b002d;
         public static final int collapseActionView=0x7f0b0014;
-        public static final int container=0x7f0b0044;
+        public static final int container=0x7f0b0043;
         public static final int default_activity_button=0x7f0b0028;
         public static final int dialog=0x7f0b0018;
         public static final int disableHome=0x7f0b0009;
@@ -860,17 +864,18 @@ containing a value of this type.
         public static final int icon=0x7f0b002a;
         public static final int ifRoom=0x7f0b0015;
         public static final int image=0x7f0b0027;
-        public static final int label=0x7f0b0043;
+        public static final int individual_key=0x7f0b0045;
+        public static final int individual_value=0x7f0b0046;
         public static final int listMode=0x7f0b0006;
         public static final int list_item=0x7f0b0029;
-        public static final int loginPassword=0x7f0b0046;
-        public static final int login_error=0x7f0b0047;
+        public static final int loginPassword=0x7f0b0048;
+        public static final int login_error=0x7f0b0049;
         public static final int middle=0x7f0b0011;
-        public static final int mobileNumber=0x7f0b0045;
+        public static final int mobileNumber=0x7f0b0047;
         public static final int never=0x7f0b0016;
         public static final int none=0x7f0b0012;
         public static final int normal=0x7f0b0007;
-        public static final int party_details=0x7f0b004b;
+        public static final int party_details=0x7f0b004d;
         public static final int party_id=0x7f0b003f;
         public static final int party_name=0x7f0b003e;
         public static final int progress_circular=0x7f0b0004;
@@ -893,8 +898,9 @@ containing a value of this type.
         public static final int split_action_bar=0x7f0b001e;
         public static final int submit_area=0x7f0b0039;
         public static final int tabMode=0x7f0b0008;
+        public static final int tableRow1=0x7f0b0044;
         public static final int title=0x7f0b002b;
-        public static final int titleTxt=0x7f0b004a;
+        public static final int titleTxt=0x7f0b004c;
         public static final int top_action_bar=0x7f0b0020;
         public static final int up=0x7f0b0021;
         public static final int useLogo=0x7f0b000e;
@@ -933,10 +939,11 @@ containing a value of this type.
         public static final int due_details_view=0x7f03001a;
         public static final int emp_home=0x7f03001b;
         public static final int home=0x7f03001c;
-        public static final int list_layout=0x7f03001d;
-        public static final int login=0x7f03001e;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001f;
-        public static final int transaction_details_view=0x7f030020;
+        public static final int individual_details_view=0x7f03001d;
+        public static final int list_layout=0x7f03001e;
+        public static final int login=0x7f03001f;
+        public static final int support_simple_spinner_dropdown_item=0x7f030020;
+        public static final int transaction_details_view=0x7f030021;
     }
     public static final class menu {
         public static final int home=0x7f0c0000;

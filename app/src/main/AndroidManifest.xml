@@ -41,7 +41,7 @@
 
             </activity>
 
-
+<activity android:name="com.srinivas.javvaji.IndividualDetailsView" android:label="Daliy Transactions"></activity>
     </application>
 
 </manifest>

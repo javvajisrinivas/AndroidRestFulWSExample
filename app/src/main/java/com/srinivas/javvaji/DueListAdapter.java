@@ -38,15 +38,15 @@ public class DueListAdapter extends ArrayAdapter<DueDetails> {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-//        View v = convertView;
-//
-//        if(v == null) {
-//            LayoutInflater li = LayoutInflater.from(getContext());
-//            v = li.inflate(R.layout.due_details_view, null);
-//        }
-        LayoutInflater inflater = (LayoutInflater) context
-                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View v = inflater.inflate(R.layout.due_details_view, parent, false);
+        View v = convertView;
+
+        if(v == null) {
+            LayoutInflater li = LayoutInflater.from(getContext());
+            v = li.inflate(R.layout.due_details_view, null);
+        }
+//        LayoutInflater inflater = (LayoutInflater) context
+//                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+//        View v = inflater.inflate(R.layout.due_details_view, parent, false);
 
 
         DueDetails dueDetails = items.get(position);
@@ -60,7 +60,7 @@ public class DueListAdapter extends ArrayAdapter<DueDetails> {
 
             if(icon != null) {
                 Resources res = getContext().getResources();
-                String sIcon = "com.srinivas.javvaji:drawable/party_details" ;
+                String sIcon = "com.srinivas.javvaji:drawable/party_details_64" ;
                 icon.setImageDrawable(res.getDrawable(res.getIdentifier(sIcon, null, null)));
             }
 

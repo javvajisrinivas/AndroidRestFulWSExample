@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shrinkColumns="*"  android:stretchColumns="*"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:baselineAligned="true" android:background="#8adec7">
+
+        <TextView
+            android:id="@+id/individual_key"
+            android:layout_width="wrap_content"
+            android:text="abcd"
+            android:layout_height="wrap_content"
+            android:padding="2dip" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/individual_value"
+            android:layout_width="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="efgh"
+            android:layout_height="wrap_content"
+            android:padding="2dip" >
+        </TextView>
+    </TableRow>
+</TableLayout>
